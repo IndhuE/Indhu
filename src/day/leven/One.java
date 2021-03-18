@@ -13,6 +13,7 @@ public class One {
 		driver.manage().window().maximize();
 		driver.get("http://demo.guru99.com/test/write-xpath-table.html");
 		WebElement rawData = driver.findElement(By.xpath("//table[@border='l']"));
+		System.out.println(rawData);
 		String text = rawData.getText();
 		System.out.println(text);
 		driver.quit();
